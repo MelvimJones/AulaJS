@@ -54,7 +54,10 @@
                 <input placeholder="2° Numero" type="number" id="numero2">
              </div>
 
-             <button onclick="somar()">Somar</button>
+             <button onclick="somar()">+</button>
+             <button onclick="subitrair()">-</button>
+             <button onclick="multiplicar()">*</button>
+             <button onclick="dividir()">/</button>
             
         </div>
     </body>
@@ -69,7 +72,41 @@
             let soma = n1 + n2
 
             window.alert("Resultado: "+ soma)
-
         }
+        function subitrair(){
+            let n1String = document.getElementById("numero1").value
+            let n2String = document.getElementById("numero2").value
+
+            let n1 = parseFloat(n1String)
+            let n2 = parseFloat(n2String)
+
+            let subitrair = n1 - n2
+
+            window.alert("Resultado: "+ subitrair)
+        }
+        function multiplicar(){
+            let n1String = document.getElementById("numero1").value
+            let n2String = document.getElementById("numero2").value
+
+            let n1 = parseFloat(n1String)
+            let n2 = parseFloat(n2String)
+
+            let multiplicar = n1 * n2
+
+            window.alert("Resultado: "+ multiplicar)
+        }
+        function dividir(){
+            let n1String = document.getElementById("numero1").value
+            let n2String = document.getElementById("numero2").value
+
+            let n1 = parseFloat(n1String)
+            let n2 = parseFloat(n2String)
+
+            let dividir = n1 / n2
+
+            window.alert("Resultado: "+ dividir)
+        }
+
+
     </script>
 </html>

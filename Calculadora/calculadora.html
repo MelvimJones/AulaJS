@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Calculadora Jones</title>
+    </head>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .card{
+            width: 30%;
+            margin: 50px auto;
+            background-color: cadetblue;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 8px 8px 20px gray;
+        }
+        .card h1{
+            color: white;
+            font-weight: 300;            
+        }
+        .card input{
+            width: 100%;
+            margin: 10px 0px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card button{
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;            
+        }
+        .card button:hover{
+            cursor: pointer;
+            background-color:darkgray;
+            color: white;
+            font-weight: 800;
+        }
+
+
+    </style>
+
+    <body>
+        <div class="card">
+            <h1>Calculadora High Tech</h1>
+            <div>
+                <input placeholder="1° Numero" type="number" id="numero1">
+             </div>
+             <div>
+                <input placeholder="2° Numero" type="number" id="numero2">
+             </div>
+
+             <button onclick="somar()">Somar</button>
+            
+        </div>
+    </body>
+    <script>
+        function somar(){
+            let n1String = document.getElementById("numero1").value
+            let n2String = document.getElementById("numero2").value
+
+            let n1 = parseFloat(n1String)
+            let n2 = parseFloat(n2String)
+
+            let soma = n1 + n2
+
+            window.alert("Resultado: "+ soma)
+
+        }
+    </script>
+</html>

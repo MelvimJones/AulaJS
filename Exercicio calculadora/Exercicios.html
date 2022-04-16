@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url(https://image.shutterstock.com/image-photo/personal-leather-bounded-journal-black-260nw-1897958548.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        .card {
+            background-color: rgba(16, 21, 21, 0.311);
+            width: 30%;
+            margin: 50px auto;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 10px 10px 50px rgba(141, 139, 139, 0.35);
+
+        }
+
+        .card h1 {
+            color: white;
+        }
+
+        .card input {
+            width: 100%;
+            margin: 5px 0px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card button {
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .card button:hover{
+            cursor: pointer;
+            background-color: rgb(66, 164, 164);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Calculadora</h1>
+        <div>
+            <input placeholder="1° Numero" type="number" id="numero1">
+        </div>
+        <div>
+            <input placeholder="2° Numero" type="number" id="numero2">
+        </div>
+        <button onclick="adicao()">+</button>
+        <button onclick="subitracao()">-</button>
+        <button onclick="multiplicacao()">x</button>
+        <button onclick="divisao()">÷</button>
+    </div>
+</body>
+
+<script>
+    function adicao(){
+        let n1S = document.getElementById("numero1").value
+        let n2S = document.getElementById("numero2").value
+        let n1 = parseFloat(n1S)
+        let n2 = parseFloat(n2S)
+        let soma = n1 + n2
+        window.alert("resultado é: "+ soma)
+    }
+    function subitracao(){
+        let n1S = document.getElementById("numero1").value
+        let n2S = document.getElementById("numero2").value
+        let n1 = parseFloat(n1S)
+        let n2 = parseFloat(n2S)
+        let soma = n1 - n2
+        window.alert("resultado é: "+ soma)
+    }
+    function multiplicacao(){
+        let n1S = document.getElementById("numero1").value
+        let n2S = document.getElementById("numero2").value
+        let n1 = parseFloat(n1S)
+        let n2 = parseFloat(n2S)
+        let soma = n1 * n2
+        window.alert("resultado é: "+ soma)
+    }
+    function divisao(){
+        let n1S = document.getElementById("numero1").value
+        let n2S = document.getElementById("numero2").value
+        let n1 = parseFloat(n1S)
+        let n2 = parseFloat(n2S)
+        let soma = n1 / n2
+        window.alert("resultado é: "+ soma)
+    }
+
+</script>
+
+
+</html>
